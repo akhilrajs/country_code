@@ -43,7 +43,7 @@ const htmlContent = `
             searchBox.addEventListener('input', function() {
                 const query = this.value.trim().toLowerCase();
                 
-                fetch('country_codes.json')
+                fetch('codes.json')
                 .then(response => response.json())
                 .then(data => {
                     let resultsHtml = '';
